@@ -1,0 +1,1894 @@
+/*
+* ----------------------------------------------------------------------------------------***
+Author       : ThemeBoots
+Template Name: DevFolio - Developer Portfolio Template
+Version      : 1.0
+* ----------------------------------------------------------------------------------------***
+*/
+
+
+/*------------------------------------------------------------------*
+
+[Table of contents]
+
+01.Reset CSS
+02.Font CSS
+0.General Css 
+04. Common CSS
+05.CSS Transantion
+06.Header css
+07.About CSS
+08.Service  CSS
+08.Experience  CSS
+11.Banner css
+12.Portfolio Css
+13.Banner css
+14.Price Css
+12.Testimonial Css
+14.Team Css
+15.Contact  css
+19.Blog  css
+20.Footer   css
+21.Responsive Css
+
+***-------------------------------------------------------------------*/
+
+
+/* Reset CSS
+=============================================================== */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, ins, kbd, q, s, samp,
+small, strike, strong, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	vertical-align: baseline;
+	background: transparent;
+}
+img{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	background: transparent;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+blockquote,
+q {
+    quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+:focus {
+    outline: 0;
+}
+a:focus {
+    outline: 0;
+}
+ins {
+    text-decoration: none;
+}
+del {
+    text-decoration: line-through;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+a {
+    text-decoration: none;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    transition: all 1s ease;
+}
+a:hover {
+    text-decoration: none;
+}
+body {
+    background: #ffffff;
+    color: #797979;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+/* Reset CSS End
+===============================================================*/
+/* Font CSS Start
+=============================================================== */
+
+body,
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #797979;
+    letter-spacing: 1px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #414141;
+    letter-spacing: 1px;
+}
+
+h1 {
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 60px;
+    letter-spacing: 3px;
+}
+
+h2 {
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+h3 {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+h4 {
+    font-size: 25px;
+    line-height: 1.2;
+    font-weight: 600;
+}
+
+h5 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+h6 {
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+a {
+    letter-spacing: 1px;
+    font-size: 16px;
+}
+
+blockquote {
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: 300;
+}
+
+/* Font CSS End
+=============================================================== */
+
+
+/* General CSS
+=============================================================== */
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+.container-fluid {
+    max-width: 1366px;
+}
+
+a {
+    word-wrap: break-word;
+    text-decoration: none !important;
+}
+
+a:active,
+a:hover,
+a:focus {
+    color: #EF233C;
+    outline: none;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/* General Css End
+=============================================================== */
+
+
+/* Common CSS Start
+=============================================================== */
+
+.cmn-btn {
+    padding: 12px 25px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #ffffff;
+    background: #EF233C;
+    border: 2px solid transparent;
+    border-radius: 0;
+    box-shadow: inset 0 0 0 50px #EF233C;
+    transition: ease-out 0.3s;
+    -webkit-transition: ease-out 0.3s;
+    -moz-transition: ease-out 0.3s;
+}
+
+.cmn-btn:hover {
+    color: #EF233C;
+    background: transparent;
+    box-shadow: inset 0 0 0 0 #EF233C;
+    border-color: #EF233C;
+}
+
+.section-header {
+    margin-bottom: 30px;
+}
+
+.section-header p {
+    display: inline-block;
+    margin: 0 30px;
+    margin-bottom: 10px;
+    padding-left: 15px;
+    position: relative;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background: #ffffff;
+}
+
+.section-header p::after {
+    position: absolute;
+    content: "";
+    width: 3px;
+    height: 3px;
+    top: 11px;
+    left: 3px;
+    background: #EF233C;
+    z-index: 1;
+}
+
+.section-header p::before {
+    position: absolute;
+    content: "";
+    height: 3px;
+    top: 11px;
+    right: 0;
+    left: -30px;
+    background: #EF233C;
+    z-index: -1;
+}
+
+.section-header h2 {
+    margin: 0;
+    position: relative;
+}
+
+@media (max-width: 767.98px) {
+    .section-header h2 {
+        font-size: 30px;
+    }
+}
+
+#loader {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: opacity .3s ease-out, visibility 0s linear .3s;
+    -o-transition: opacity .3s ease-out, visibility 0s linear .3s;
+    transition: opacity .3s ease-out, visibility 0s linear .3s;
+    z-index: 999;
+}
+
+#loader.show {
+    -webkit-transition: opacity .6s ease-out, visibility 0s linear 0s;
+    -o-transition: opacity .6s ease-out, visibility 0s linear 0s;
+    transition: opacity .6s ease-out, visibility 0s linear 0s;
+    visibility: visible;
+    opacity: 1;
+}
+
+#loader .loader {
+    position: relative;
+    width: 45px;
+    height: 45px;
+    border: 5px solid #dddddd;
+    border-top: 5px solid #EF233C;
+    border-radius: 50%;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.back-to-top {
+    position: fixed;
+    display: none;
+    width: 44px;
+    height: 44px;
+    padding: 8px 0;
+    text-align: center;
+    line-height: 1;
+    font-size: 22px;
+    right: 15px;
+    bottom: 15px;
+    z-index: 9;
+}
+
+.back-to-top i {
+    color: #ffffff;
+}
+
+.back-to-top:hover i {
+    color: #414141;
+}
+
+
+/* Common CSS End
+=============================================================== */
+
+
+/*CSS Transantion Start
+========================================================*/
+
+a,
+.header-area .navbar-default .navbar-nav>li>a:before,
+.single-service,
+.fa,
+.single-counter,
+.single-blog,
+button,
+.fixed-menu {
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+
+
+/*CSS Transantion End
+========================================================*/
+
+/* Header CSS Start
+=============================================================== */
+
+.header-area nav .navbar {
+    position: relative;
+    transition: .5s;
+    z-index: 999;
+}
+
+.header-area .navbar .navbar-brand {
+    color: #ffffff;
+}
+
+.header-area a.navbar-brand {
+    margin: 0;
+    font-size: 45px;
+    line-height: 0px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    transition: .5s;
+}
+
+.header-area .navbar.nav-sticky {
+    padding: 10px 60px;
+    background: #ffffff !important;
+}
+
+.header-area .navbar.nav-sticky {
+    position: fixed;
+    transition: .5s;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 2px 5px rgb(0 0 0 / 30%);
+}
+
+.header-area .navbar .dropdown-menu {
+    margin-top: 0;
+    border: 0;
+    border-radius: 0;
+    background: #f8f9fa;
+}
+
+/* Header CSS End
+=============================================================== */
+
+
+/* Hero CSS Start
+=============================================================== */
+
+.hero-area {
+    position: relative;
+    width: 100%;
+    padding: 120px 0 0 0;
+    overflow: hidden;
+    background: linear-gradient(rgba(239, 35, 60, .95), rgba(239, 35, 60, .95)), url(../img/hero-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-text {
+    padding-left: 75px;
+}
+
+.hero-area .hero-text h4 {
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.hero-area .hero-text h1 {
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.hero-area .hero-text h2 {
+    display: inline-block;
+    margin: 0;
+    height: 35px;
+    color: #ffffff;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.hero-area .hero-text .typed-text {
+    display: none;
+}
+
+.hero-area .hero-text .typed-cursor {
+    font-size: 35px;
+    font-weight: 300;
+    color: #ffffff;
+}
+
+.hero-btn {
+    padding-left: 75px;
+    padding-top: 35px;
+}
+
+.hero-area .hero-btn .cmn-btn {
+    margin-top: 35px;
+    color: #EF233C;
+    background: #ffffff;
+    box-shadow: inset 0 0 0 50px #ffffff;
+}
+
+.hero-area .hero-btn .cmn-btn:hover {
+    color: #ffffff;
+    background: transparent;
+    box-shadow: inset 0 0 0 0 #ffffff;
+    border-color: #ffffff;
+}
+
+.hero-img {
+    padding-right: 75px;
+}
+
+.hero-area .hero-img img {
+    float: right;
+    width: 80%;
+    height: 80%;
+}
+
+/* Hero CSS End
+=============================================================== */
+
+
+/* About CSS Start
+=============================================================== */
+
+.about-area .about-content {
+    padding: 0 60px;
+}
+
+.about-area .col-lg-6 {
+    padding: 0;
+}
+
+.about-img img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-text p {
+    margin-bottom: 1rem !important;
+}
+
+.about-area .skills {
+    margin-bottom: 30px;
+}
+
+.about-area .skill-name {
+    margin-top: 15px;
+}
+
+.about-area .skill-name p {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.about-area .skill-name p:last-child {
+    float: right;
+}
+
+.about-area .progress {
+    height: 10px;
+    border-radius: 10px;
+    background: #dddddd;
+}
+
+.about-area .progress .progress-bar {
+    width: 0px;
+    background: #EF233C;
+    border-radius: 10px;
+    transition: 2s;
+}
+
+/* About CSS End
+=============================================================== */
+
+
+/* Service CSS Start
+=============================================================== */
+
+.service-area {
+    padding: 90px 0 15px 0;
+}
+
+.service-area .service-item {
+    position: relative;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    box-shadow: inset 0 0 0 0 transparent;
+    transition: ease-out 0.5s;
+}
+
+.service-area .service-item:hover {
+    box-shadow: inset 800px 0 0 0 #ef233c;
+}
+
+.service-area .service-icon {
+    position: relative;
+    width: 150px;
+    min-height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #EF233C;
+    background: #ffffff;
+}
+
+.service-area .service-icon i {
+    position: relative;
+    font-size: 60px;
+    color: #EF233C;
+    transition: .3s;
+}
+
+.service-area .service-item:hover i {
+    font-size: 75px;
+}
+
+.service-area .service-text {
+    position: relative;
+    width: calc(100% - 120px);
+    padding: 0 30px;
+}
+
+.service-area .service-text h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    transition: 1s;
+}
+
+.service-area .service-text p {
+    margin: 0;
+    font-size: 16px;
+    transition: 1s;
+}
+
+/* Service CSS End
+=============================================================== */
+
+/* Experience CSS Start
+=============================================================== */
+
+.experience-area {
+    padding: 45px 0 15px 0;
+}
+
+.experience-area .timeline {
+    position: relative;
+    width: 100%;
+}
+
+.experience-area .timeline::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    background: #EF233C;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -1px;
+}
+
+.experience-area .timeline .timeline-item.left {
+    left: 0;
+    padding-right: 30px;
+}
+
+.experience-area .timeline .timeline-item.right {
+    left: 50%;
+    padding-left: 30px;
+}
+
+.experience-area .timeline .timeline-item {
+    position: relative;
+    background: inherit;
+    width: 50%;
+    margin-bottom: 30px;
+}
+
+.experience-area .timeline .timeline-item::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 46px;
+    right: 10px;
+    z-index: 1;
+    border: 10px solid;
+    border-color: transparent transparent transparent #dddddd;
+}
+
+.experience-area .timeline .timeline-item::after {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 48px;
+    right: -8px;
+    background: #ffffff;
+    border: 2px solid #EF233C;
+    border-radius: 16px;
+    z-index: 1;
+}
+
+.experience-area .timeline .timeline-text {
+    padding: 30px;
+    background: #ffffff;
+    position: relative;
+    border-right: 5px solid #dddddd;
+    box-shadow: 0 0 60px rgb(0 0 0 / 8%);
+}
+
+.experience-area .timeline .timeline-item.left .timeline-date {
+    text-align: left;
+    left: calc(100% + 55px);
+}
+
+.experience-area .timeline .timeline-date {
+    position: absolute;
+    width: 100%;
+    top: 44px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #EF233C;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    z-index: 1;
+}
+
+.experience-area .timeline .timeline-text h2 {
+    margin: 0 0 5px 0;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.experience-area .timeline .timeline-text h4 {
+    margin: 0 0 10px 0;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.experience-area .timeline .timeline-text p {
+    margin: 0;
+    font-size: 16px;   
+}
+
+.experience-area .timeline .timeline-item.right .timeline-text {
+    border-right: none;
+    border-left: 5px solid #dddddd;
+}
+
+.experience-area .timeline .timeline-item.right .timeline-date {
+    text-align: right;
+    right: calc(100% + 55px);
+}
+
+.experience-area .timeline .timeline-item.right::before {
+    left: 10px;
+    border-color: transparent #dddddd transparent transparent;
+}
+
+.experience-area .timeline .timeline-item::after {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 48px;
+    right: -8px;
+    background: #ffffff;
+    border: 2px solid #EF233C;
+    border-radius: 16px;
+    z-index: 1;
+}
+
+.experience-area .timeline .timeline-item.right::after {
+    left: -8px;
+}
+
+
+/* Exprience CSS End
+=============================================================== */
+
+
+/* Banner CSS Start
+=============================================================== */
+
+.banner-area {
+    width: 100%;
+    margin: 45px 0;
+    padding: 90px 0;
+    background: #EF233C;
+}
+
+.banner-area .container {
+    max-width: 750px;
+    text-align: center;
+}
+
+.banner-area .section-header {
+    margin-bottom: 20px;
+}
+
+.banner-area .section-header p {
+    color: #414141;
+    background: transparent;
+}
+
+.banner-area .section-header h2 {
+    color: #ffffff;
+}
+
+.banner-area .section-header h2 span {
+    color: #414141;
+    font-size: 50px;
+}
+
+.banner-area .container {
+    max-width: 750px;
+    text-align: center;
+}
+
+.banner-area .banner-text p {
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 2.5rem;
+}
+
+.banner-area .banner-text .cmn-btn {
+    margin-top: 15px;
+    color: #EF233C;
+    background: #ffffff;
+    box-shadow: inset 0 0 0 50px #ffffff;
+}
+
+.banner-area .banner-text .cmn-btn:hover {
+    color: #ffffff;
+    background: transparent;
+    box-shadow: inset 0 0 0 0 #ffffff;
+    border-color: #ffffff;
+}
+
+/* Banner CSS End
+=============================================================== */
+
+
+/* Portfolio CSS Stant
+=============================================================== */
+
+.portfolio-area {
+    position: relative;
+    padding: 45px 0 15px 0;
+}
+
+.portfolio-area #portfolio-filter {
+    padding: 0;
+    margin: -15px 0 25px 0;
+    list-style: none;
+    font-size: 0;
+    text-align: center;
+}
+
+.portfolio-area #portfolio-filter li {
+    cursor: pointer;
+    display: inline-block;
+    margin: 5px;
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #ffffff;
+    background: #EF233C;
+    border: 2px solid transparent;
+    border-radius: 0;
+    box-shadow: inset 0 0 0 50px #ef233c;
+    transition: ease-out 0.3s;
+    -webkit-transition: ease-out 0.3s;
+    -moz-transition: ease-out 0.3s;
+}
+
+.portfolio-area #portfolio-filter li.filter-active {
+    color: #EF233C;
+    background: transparent;
+    box-shadow: inset 0 0 0 0 #ef233c;
+    border-color: #EF233C;
+}
+
+.portfolio-area #portfolio-filter li:hover, 
+.portfolio-area #portfolio-filter li.filter-active {
+    color: #EF233C;
+    background: transparent;
+    box-shadow: inset 0 0 0 0 #ef233c;
+    border-color: #EF233C;
+}
+
+.portfolio-area .portfolio-wrap {
+    position: relative;
+    width: 100%;
+}
+
+.portfolio-area .portfolio-img {
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio-area .portfolio-img img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1.1);
+    transition: .5s;
+}
+
+.portfolio-area .portfolio-item:hover img {
+    margin-left: 15px;
+}
+
+.portfolio-area .portfolio-text {
+    position: relative;
+    height: 60px;
+    width: calc(100% - 30px);
+    margin: -30px 15px 30px 15px;
+    display: flex;
+    align-items: center;
+    background: #ffffff;
+    box-shadow: 0 0 15px rgb(0 0 0 / 12%);
+}
+
+.portfolio-area .portfolio-text h3 {
+    width: calc(100% - 70px);
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 0 0 15px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.portfolio-area .portfolio-text a.cmn-btn {
+    width: 50px;
+    height: 50px;
+    padding: 0 0 2px 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 45px;
+    font-weight: 100;
+}
+  
+.portfolio-area .portfolio-item:hover a.cmn-btn {
+    color: #EF233C;
+    background: transparent;
+    box-shadow: inset 0 0 0 0 #ef233c;
+    border-color: #EF233C;
+}
+
+/* Portolio CSS End
+=============================================================== */
+
+
+/* Banner CSS Start
+=============================================================== */
+
+.banner-area {
+    width: 100%;
+    margin: 45px 0;
+    padding: 90px 0;
+    background: #EF233C;
+}
+
+.banner-area .container {
+    max-width: 750px;
+    text-align: center;
+}
+
+.banner-area .section-header {
+    margin-bottom: 20px;
+}
+
+.banner-area .section-header p {
+    color: #414141;
+    background: transparent;
+}
+
+.banner-area .section-header h2 {
+    color: #ffffff;
+}
+
+.banner-area .container {
+    max-width: 750px;
+    text-align: center;
+}
+
+.banner-area .banner-text p {
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.banner-area .banner-text .cmn-btn {
+    margin-top: 15px;
+    color: #EF233C;
+    background: #ffffff;
+    box-shadow: inset 0 0 0 50px #ffffff;
+}
+
+.banner .banner-text .cmn-btn:hover {
+    color: #ffffff;
+    background: transparent;
+    box-shadow: inset 0 0 0 0 #ffffff;
+    border-color: #ffffff;
+}
+
+/* Banner CSS End
+=============================================================== */
+
+
+/* Price CSS Start
+=============================================================== */
+
+.price-area {
+    position: relative;
+    width: 100%;
+    padding: 45px 0 15px 0;
+}
+
+.price-area .row {
+    padding: 0 15px;
+}
+
+.price-area .col-md-4 {
+    padding: 0;
+}
+
+.price-area .price-item {
+    position: relative;
+    margin-bottom: 30px;
+    background: #ffffff;
+}
+
+.price-area .price-header {
+    padding: 45px 0 30px 0;
+    color: #414141;
+}
+
+.price-area .price-header, 
+.price-area .price-body, 
+.price-area .price-footer {
+    position: relative;
+    text-align: center;
+}
+
+.price-area .price-header {
+    padding: 45px 0 30px 0;
+    color: #414141;
+}
+
+.price-area .price-title h2 {
+    font-size: 25px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.price-area .price-header {
+    padding: 45px 0 30px 0;
+    color: #414141;
+}
+
+.price-area .price-prices h2 {
+    font-size: 45px;
+    font-weight: 700;
+    margin-left: 10px;
+}
+
+.price-area .price-body {
+    padding: 0 0 20px 0;
+}
+
+.price-area .price-description ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.price-area .price-description ul li {
+    padding: 0 0 20px 0;
+}
+
+.price-area .price-item .price-action {
+    padding-bottom: 45px;
+}
+
+.price-area .price-item .price-action .cmn-btn {
+    color: #ffffff;
+    background: #414141;
+    box-shadow: inset 0 0 0 50px #414141;
+}
+
+.price-area .price-item .price-action .cmn-btn:hover {
+    color: #414141;
+    background: transparent;
+    box-shadow: inset 0 0 0 0 #414141;
+    border-color: #414141;
+}
+
+.price-area .featured-item {
+    box-shadow: 0 0 30px rgb(0 0 0 / 20%);
+    z-index: 1;
+}
+
+.price-area .price-item.featured-item .price-header {
+    color: #EF233C;
+}
+
+.price-area .price-item.featured-item h2 {
+    color: #EF233C;
+}
+
+.price-area .price-item.featured-item .price-action .cmn-btn {
+    color: #ffffff;
+    background: #EF233C;
+    box-shadow: inset 0 0 0 50px #ef233c;
+}
+
+.price-area .price-item.featured-item .price-action .cmn-btn:hover {
+    color: #EF233C;
+    background: transparent;
+    box-shadow: inset 0 0 0 0 #ef233c;
+    border-color: #EF233C;
+}
+
+
+/* Price CSS End
+=============================================================== */
+
+
+/* Testimonial CSS Start
+=============================================================== */
+
+.testimonial-area {
+    position: relative;
+    margin: 45px 0;
+    padding: 90px 0;
+    background: #EF233C;
+}
+
+.testimonial-area .container {
+    max-width: 900px;
+}
+
+.testimonial-area .testimonial-icon {
+    margin-bottom: 45px;
+    text-align: center;
+}
+
+.testimonial-area .testimonial-icon i {
+    font-size: 60px;
+    color: rgba(256, 256, 256, .5);
+}
+
+.testimonial-area .testimonial-item {
+    position: relative;
+    margin: 0 15px;
+    text-align: center;
+}
+
+.testimonial-area .testimonial-img {
+    position: relative;
+    margin-bottom: 15px;
+    z-index: 1;
+}
+
+.testimonial-area .testimonial-item img {
+    margin: 0 auto;
+    width: 120px;
+    padding: 10px;
+    border: 5px dotted #ffffff;
+    border-radius: 100px;
+}
+
+.testimonial-area .testimonial-text {
+    position: relative;
+    margin-top: -70px;
+    padding: 65px 35px 30px 35px;
+    text-align: center;
+    background: #ffffff;
+    border-radius: 500px;
+}
+
+.testimonial-area .testimonial-item p {
+    font-size: 18px;
+    font-style: italic;
+    padding-bottom: 15px;
+}
+
+.testimonial-area .testimonial-text h3 {
+    color: #EF233C;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.testimonial-area .testimonial-text h4 {
+    color: #666666;
+    font-size: 14px;
+    margin-bottom: 0;
+    font-weight: 500;
+}
+
+.testimonial-area .owl-dots {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.testimonial-area .owl-dot {
+    display: inline-block;
+    margin: 0 5px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgba(256, 256, 256, .5);
+}
+
+.testimonial-area .owl-dot.active {
+    background: #ffffff;
+}
+
+/* Testimonial CSS End
+=============================================================== */
+
+
+/* Team CSS Start
+=============================================================== */
+
+.team-area {
+    position: relative;
+    width: 100%;
+    padding: 45px 0 15px 0;
+}
+
+.team-area .team-item {
+    position: relative;
+    background: #ffffff;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    box-shadow: inset 0 0 0 0 transparent;
+    transition: ease-out 0.5s;
+}
+
+.team-area .team-img {
+    position: relative;
+    width: 50%;
+    overflow: hidden;
+}
+
+.team-area .team-img img {
+    position: relative;
+    width: 100%;
+    transition: .5s;
+}
+
+.team-area .team-text {
+    position: relative;
+    width: 50%;
+    padding: 0 30px;
+}
+
+.team-area .team-text h2 {
+    color: #EF233C;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    transition: 1s;
+}
+
+.team-area .team-text h4 {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    transition: 1s;
+}
+
+.team-area .team-text p {
+    margin-bottom: 20px;
+    transition: 1s;
+}
+
+.team-area .team-social {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.team-area .team-social a.cmn-btn {
+    width: 35px;
+    height: 35px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: normal;
+    margin-right: 5px;
+}
+
+.team-area .team-item:hover {
+    box-shadow: inset 800px 0 0 0 #EF233C;
+}
+
+.team-area .team-item:hover .team-img img {
+    transform: scale(1.2);
+}
+
+.team-area .team-item:hover .team-text h2,
+.team-area .team-item:hover .team-text h4,
+.team-area .team-item:hover .team-text p {
+    color: #ffffff;
+}
+
+.team-area .team-item:hover .team-social a.cmn-btn {
+    background: #ffffff;
+}
+
+.team-area .team-item:hover .team-social a.cmn-btn:hover {
+    border-color: #ffffff;
+}
+
+/* Team CSS End
+=============================================================== */
+
+
+/* Contact CSS Start
+=============================================================== */
+
+.contact-area {
+    position: relative;
+    width: 100%;
+    margin: 45px 0;
+    background: #EF233C;
+}
+
+.contact-area .container-fluid {
+    background: url(../img/azaz-con.jpg) left center no-repeat;
+    background-size: contain;
+}
+
+.contact-area .contact-form {
+    position: relative;
+    padding: 90px 0 90px 45px;
+    background: #EF233C;
+}
+
+.contact-area .contact-form input {
+    color: #ffffff;
+    padding: 15px 0;
+    background: none;
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px solid rgba(256, 256, 256, .5);
+}
+
+.form-control:focus {
+    box-shadow: none;
+}
+
+.control-group p.help-block {
+    margin-bottom: 10px;
+}
+
+.contact-area .contact-form textarea {
+    color: #ffffff;
+    height: 90px;
+    padding: 15px 0;
+    background: none;
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px solid rgba(256, 256, 256, .5);
+}
+
+.contact-area .contact-form .form-control::placeholder {
+    color: #ffffff;
+    opacity: 1;
+}
+
+.contact-area .contact-form .form-control:-ms-input-placeholder,
+.contact-area .contact-form .form-control::-ms-input-placeholder {
+    color: #ffffff;
+}
+
+.contact-area .contact-form .cmn-btn {
+    margin-top: 35px;
+    color: #EF233C;
+    background: #ffffff;
+    box-shadow: inset 0 0 0 50px #ffffff;
+}
+
+.contact-area .contact-form .cmn-btn:hover {
+    color: #ffffff;
+    background: transparent;
+    box-shadow: inset 0 0 0 0 #ffffff;
+    border-color: #ffffff;
+}
+
+.contact-area .help-block ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-size: 14px;
+    font-style: italic;
+    color: #ffffff;
+}
+
+/* Contact CSS End
+=============================================================== */
+
+
+/* Blog CSS Start
+=============================================================== */
+
+.blog-area {
+    position: relative;
+    width: 100%;
+    padding: 45px 0 15px 0;
+}
+
+.blog-area .blog-item {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.blog-area .blog-img {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.blog-area .blog-img img {
+    width: 100%;
+    transition: .5s;
+}
+
+.blog-area .blog-item:hover img {
+    transform: scale(1.1);
+}
+
+.blog-area .blog-text {
+    position: relative;
+    padding: 30px;
+    border-right: 1px solid rgba(0, 0, 0, .07);
+    border-bottom: 1px solid rgba(0, 0, 0, .07);
+    border-left: 1px solid rgba(0, 0, 0, .07);
+}
+
+.blog-area .blog-text h2 {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.blog-area .blog-text p {
+    margin-bottom: 25px;
+}
+
+.blog-area .blog-item a.cmn-btn {
+    margin-top: 10px;
+    padding: 8px 15px;
+}
+
+.blog-area .blog-item a.cmn-btn i {
+    margin-left: 5px;
+}
+
+.blog-area .blog-meta {
+    position: relative;
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.blog-area .blog-meta p {
+    margin: 0 10px 0 0;
+    font-size: 13px;
+}
+
+.blog-area .blog-meta i {
+    color: #414141;
+    margin-right: 5px;
+}
+
+.blog-area .blog-meta p:last-child {
+    margin: 0;
+}
+
+/* Blog CSS End
+=============================================================== */
+
+
+/* Footer CSS Start
+=============================================================== */
+
+.footer-area {
+    position: relative;
+    margin-top: 45px;
+    background: #EF233C;
+}
+
+.footer-area .container-fluid {
+    padding: 60px 0 0 0;
+}
+
+.footer-area .footer-info {
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+.footer-area .footer-info h2 {
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.footer-area .footer-info h3 {
+    margin-bottom: 25px;
+    font-size: 22px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.footer-area .footer-menu {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-area .footer-menu p {
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 10px;
+    border-right: 1px solid #ffffff;
+}
+
+.footer-area .footer-menu p:last-child {
+    border: none;
+}
+
+.footer-area .footer-social {
+    position: relative;
+    margin-top: 15px;
+}
+
+.footer-area .footer-social a {
+    display: inline-block;
+}
+
+.footer-area .footer-social a i {
+    margin-right: 15px;
+    font-size: 20px;
+    color: #ffffff;
+    transition: .3s;
+}
+
+.footer-area .footer-social a:last-child i {
+    margin: 0;
+}
+
+.footer-area .footer-social a:hover i {
+    color: #414141;
+}
+
+.footer-area .copyright {
+    position: relative;
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.footer-area .copyright::before {
+    position: absolute;
+    content: "";
+    width: 50%;
+    height: 1px;
+    top: 0;
+    left: 25%;
+    background: rgba(256, 256, 256, .2);
+}
+
+.footer-area .copyright p {
+    margin: 0;
+    color: #ffffff;
+}
+
+.footer-area .copyright .col-md-6:last-child p {
+    text-align: right;
+}
+
+.footer-area .copyright p a {
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.footer-area .copyright p a:hover {
+    color: #414141;
+}
+
+/* Footer CSS End
+=============================================================== */
+
+
+/*Responsive Css Start
+=========================================*/
+
+@media (min-width: 992px) {
+    .header-area .navbar .navbar-brand {
+        color: #ffffff;
+    }
+    
+    .header-area .navbar {
+        position: absolute;
+        width: 100%;
+        padding: 30px 20px;
+        background: transparent !important;
+        border-bottom: 1px dashed rgba(256, 256, 256, .2);
+        transition: .5s;
+        z-index: 9;
+    }   
+
+    .header-area .navbar.nav-sticky {
+        padding: 10px 20px;
+        background: #ffffff !important;
+    }
+
+    .header-area .navbar .navbar-brand {
+        color: #ffffff;
+    }   
+
+    .header-area .navbar.nav-sticky .navbar-brand {
+        color: #EF233C;
+    }
+
+    .header-area .navbar-light .navbar-nav .nav-link,
+    .header-area .navbar-light .navbar-nav .nav-link:focus {
+        padding: 10px 10px 8px 10px;
+        color: #ffffff;
+        font-size: 15px;
+        font-weight: 500;
+    }   
+
+    .header-area .navbar-light.nav-sticky .navbar-nav .nav-link,
+    .header-area .navbar-light.nav-sticky .navbar-nav .nav-link:focus {
+        color: #414141;
+    }
+
+    .header-area .navbar-light .navbar-nav .nav-link:hover,
+    .header-area .navbar-light .navbar-nav .nav-link.active {
+        color: #111111;
+    }    
+
+    .header-area .navbar-light.nav-sticky .navbar-nav .nav-link:hover,
+    .header-area .navbar-light.nav-sticky .navbar-nav .nav-link.active {
+        color: #EF233C;
+    }
+}
+
+@media (max-width: 991.98px) {   
+    .header-area .navbar {
+        padding: 15px;
+        background: #ffffff !important;
+        z-index: 9;
+    }
+
+    .header-area .navbar.nav-sticky {
+        padding: 15px 15px;
+        background: #ffffff !important;
+    } 
+    
+    .header-area .navbar .navbar-brand {
+        color: #EF233C !important;
+    }
+
+    .header-area .navbar .navbar-nav {
+        margin-top: 15px;
+    }
+
+    .header-area .navbar a.nav-link {
+        padding: 5px;
+    }
+
+    .header-area .navbar .dropdown-menu {
+        box-shadow: none;
+    }
+
+
+    .hero-area {
+        padding-top: 60px;
+    }
+    
+    .hero-area .hero-content {
+        padding: 0 15px;
+    }
+
+    .hero-text,
+    .hero-btn {
+        padding-left: 0;
+    }
+    
+    .hero-area .hero-text p {
+        font-size: 20px;
+    }
+    
+    .hero-area .hero-text h1 {
+        font-size: 45px;
+    }
+    
+    .hero-area .hero-text h2 {
+        font-size: 25px;
+        height: 25px;
+    }
+    
+    .hero-area .hero-btn .cmn-btn {
+        padding: 12px 30px;
+        letter-spacing: 1px;
+    }
+
+    .about-area .about-content {
+        padding: 45px 15px 0 15px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .hero-area {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    
+    .hero-area,
+    .hero-area .hero-text,
+    .hero-area .hero-btn {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .hero-area .hero-text p {
+        font-size: 18px;
+    }
+    
+    .hero-area .hero-text h1 {
+        font-size: 35px;
+    }
+    
+    .hero-area .hero-text h2 {
+        font-size: 22px;
+        height: 22px;
+    }
+    
+    .hero-area .hero-btn .cmn-btn {
+        padding: 10px 15px;
+        letter-spacing: 1px;
+    }
+
+    .hero-img {
+        display: none;
+    }
+
+    .experience-area .timeline::after {
+        left: 8px;
+    }
+
+    .experience-area .timeline .timeline-item {
+        width: 100%;
+        padding-left: 38px;
+    }
+    
+    .experience-area .timeline .timeline-item.left {
+        padding-right: 0;
+    }
+    
+    .experience-area .timeline .timeline-item.right {
+        left: 0%;
+        padding-left: 38px;
+    }
+
+    .experience-area .timeline .timeline-item.left::after, 
+    .experience-area .timeline .timeline-item.right::after {
+        left: 0;
+    }
+    
+    .experience-area .timeline .timeline-item.left::before,
+    .experience-area .timeline .timeline-item.right::before {
+        left: 18px;
+        border-color: transparent #dddddd transparent transparent;
+    }
+    
+    .experience-area .timeline .timeline-item.left .timeline-date,
+    .experience-area .timeline .timeline-item.right .timeline-date {
+        position: relative;
+        top: 0;
+        right: auto;
+        left: 0;
+        text-align: left;
+        margin-bottom: 10px;
+    }
+    
+    .experience-area .timeline .timeline-item.left .timeline-text,
+    .experience-area .timeline .timeline-item.right .timeline-text {
+        border-right: none;
+        border-left: 5px solid #dddddd;
+    }
+
+    .contact-area .container-fluid {
+        background: none;
+    }
+    
+    .contact-area .contact-form {
+        padding: 90px 0;
+    }
+
+    .contact-area .contact-form input {
+        padding: 10px 0;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .hero-area .hero-text p {
+        font-size: 16px;
+    }
+    
+    .hero-area .hero-text h1 {
+        font-size: 30px;
+    }
+    
+    .hero-area .hero-text h2 {
+        font-size: 18px;
+        height: 18px;
+    }
+    
+    .hero-area .hero-btn .cmn-btn {
+        padding: 8px 10px;
+        letter-spacing: 0;
+    }
+
+    .service-area .service-text h3 {
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+    
+    .service-area .service-text p {
+        font-size: 14px;
+    }
+
+    .team-area .team-text {
+        padding: 0 15px;
+    }
+    
+    .team-area .team-text h2 {
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+
+    .team-area .team-text h4 {
+        margin-bottom: 5px;
+    }
+
+    .team-area .team-text p {
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 10px;
+    }
+
+    .footer-area .footer-info h2 {
+        margin-bottom: 20px;
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .footer-area .footer-info h3 {
+        margin-bottom: 20px;
+        font-size: 16px;
+    }
+
+    .footer-area .footer-menu p {
+        font-size: 16px;
+        line-height: 16px;
+        padding: 0 5px;
+    }
+}
+
+/*Responsive Css End
+=========================================*/
