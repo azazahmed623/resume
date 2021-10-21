@@ -1,7 +1,7 @@
 /*
 * ----------------------------------------------------------------------------------------***
-Author       : ThemeBoots
-Template Name: DevFolio - Developer Portfolio Template
+Author       : A2
+Template Name: A2 - A2 Portfolio Template
 Version      : 1.0
 * ----------------------------------------------------------------------------------------***
 */
@@ -13,23 +13,19 @@ Version      : 1.0
 
 01.Reset CSS
 02.Font CSS
-0.General Css 
+03.General Css 
 04. Common CSS
 05.CSS Transantion
 06.Header css
 07.About CSS
-08.Service  CSS
-08.Experience  CSS
-11.Banner css
+08.Education  CSS
+08.Skill  CSS
+11.Services css
 12.Portfolio Css
-13.Banner css
-14.Price Css
-12.Testimonial Css
-14.Team Css
-15.Contact  css
-19.Blog  css
-20.Footer   css
-21.Responsive Css
+13.Contact  css
+14.Blog  css
+15.Footer   css
+16.Responsive Css
 
 ***-------------------------------------------------------------------*/
 
@@ -451,16 +447,7 @@ button,
 
 .hero-text {
     padding-left: 75px;
-}
-
-.hero-area .hero-text h4 {
-    color: #ffffff;
-    margin-bottom: 15px;
-}
-
-.hero-area .hero-text h1 {
-    color: #ffffff;
-    margin-bottom: 15px;
+    text-align: center;
 }
 
 .hero-area .hero-text h2 {
@@ -482,34 +469,36 @@ button,
     color: #ffffff;
 }
 
-.hero-btn {
-    padding-left: 75px;
-    padding-top: 35px;
-}
-
-.hero-area .hero-btn .cmn-btn {
-    margin-top: 35px;
-    color: #EF233C;
-    background: #ffffff;
-    box-shadow: inset 0 0 0 50px #ffffff;
-}
-
-.hero-area .hero-btn .cmn-btn:hover {
-    color: #ffffff;
-    background: transparent;
-    box-shadow: inset 0 0 0 0 #ffffff;
-    border-color: #ffffff;
-}
-
 .hero-img {
     padding-right: 75px;
 }
 
 .hero-area .hero-img img {
     float: right;
-    width: 80%;
+    width: 100%;
     height: 80%;
 }
+
+img.vert-move {
+    -webkit-animation: mover 2s infinite  alternate;
+    animation: mover 2s infinite  alternate;
+}
+
+img.vert-move {
+    -webkit-animation: mover 2s infinite  alternate;
+    animation: mover 2s infinite  alternate;
+}
+
+@-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+
 
 /* Hero CSS End
 =============================================================== */
@@ -518,8 +507,12 @@ button,
 /* About CSS Start
 =============================================================== */
 
+.about-area {
+    background-color: #f3f3f3;
+}
+
 .about-area .about-content {
-    padding: 0 60px;
+    padding: 80px 60px;
 }
 
 .about-area .col-lg-6 {
@@ -531,111 +524,32 @@ button,
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 50%;
 }
 
-.about-text p {
-    margin-bottom: 1rem !important;
+.info-text {
+    margin: 20px 0;
 }
 
-.about-area .skills {
-    margin-bottom: 30px;
+.info-text h4 {
+    width: 150px;
 }
 
-.about-area .skill-name {
-    margin-top: 15px;
+.info-text span {
+    font-size: 1.4rem;
+    padding: 0 30px;
 }
 
-.about-area .skill-name p {
-    display: inline-block;
-    margin-bottom: 5px;
-    font-size: 16px;
-    font-weight: 400;
-}
-
-.about-area .skill-name p:last-child {
-    float: right;
-}
-
-.about-area .progress {
-    height: 10px;
-    border-radius: 10px;
-    background: #dddddd;
-}
-
-.about-area .progress .progress-bar {
-    width: 0px;
-    background: #EF233C;
-    border-radius: 10px;
-    transition: 2s;
+.info-text p {
+    font-size: 1.5rem;
+    width: 66%;
+    padding-bottom: 20px;
+    border-bottom: 1px solid;
 }
 
 /* About CSS End
 =============================================================== */
 
-
-/* Service CSS Start
-=============================================================== */
-
-.service-area {
-    padding: 90px 0 15px 0;
-}
-
-.service-area .service-item {
-    position: relative;
-    margin-bottom: 30px;
-    display: flex;
-    align-items: center;
-    box-shadow: inset 0 0 0 0 transparent;
-    transition: ease-out 0.5s;
-}
-
-.service-area .service-item:hover {
-    box-shadow: inset 800px 0 0 0 #ef233c;
-}
-
-.service-area .service-icon {
-    position: relative;
-    width: 150px;
-    min-height: 150px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid #EF233C;
-    background: #ffffff;
-}
-
-.service-area .service-icon i {
-    position: relative;
-    font-size: 60px;
-    color: #EF233C;
-    transition: .3s;
-}
-
-.service-area .service-item:hover i {
-    font-size: 75px;
-}
-
-.service-area .service-text {
-    position: relative;
-    width: calc(100% - 120px);
-    padding: 0 30px;
-}
-
-.service-area .service-text h3 {
-    margin-bottom: 10px;
-    font-size: 20px;
-    font-weight: 600;
-    transition: 1s;
-}
-
-.service-area .service-text p {
-    margin: 0;
-    font-size: 16px;
-    transition: 1s;
-}
-
-/* Service CSS End
-=============================================================== */
 
 /* Experience CSS Start
 =============================================================== */
@@ -787,7 +701,6 @@ button,
 
 .banner-area {
     width: 100%;
-    margin: 45px 0;
     padding: 90px 0;
     background: #EF233C;
 }
@@ -801,11 +714,6 @@ button,
     margin-bottom: 20px;
 }
 
-.banner-area .section-header p {
-    color: #414141;
-    background: transparent;
-}
-
 .banner-area .section-header h2 {
     color: #ffffff;
 }
@@ -815,32 +723,96 @@ button,
     font-size: 50px;
 }
 
-.banner-area .container {
-    max-width: 750px;
+.skill {
+    list-style: none;
+    margin-top: 25px;
     text-align: center;
+    padding: 25px 25px 15px 25px;
 }
 
-.banner-area .banner-text p {
-    font-size: 18px;
-    color: #ffffff;
-    margin-bottom: 2.5rem;
-}
-
-.banner-area .banner-text .cmn-btn {
-    margin-top: 15px;
-    color: #EF233C;
-    background: #ffffff;
-    box-shadow: inset 0 0 0 50px #ffffff;
-}
-
-.banner-area .banner-text .cmn-btn:hover {
-    color: #ffffff;
-    background: transparent;
-    box-shadow: inset 0 0 0 0 #ffffff;
-    border-color: #ffffff;
+.skill li {
+    display: inline-block;
+    padding: 3px 12px;
+    margin-right: 5px;
+    color: #fff;
+    background-color: #222;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: 0.3s;
 }
 
 /* Banner CSS End
+=============================================================== */
+
+
+/* Service CSS Start
+=============================================================== */
+
+.service-area {
+    padding: 90px 0 15px 0;
+}
+
+.service-area .service-item {
+    position: relative;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    box-shadow: inset 0 0 0 0 transparent;
+    transition: ease-out 0.5s;
+}
+
+.service-area .service-item:hover {
+    box-shadow: inset 800px 0 0 0 #ef233c;
+}
+
+.service-area .service-item:hover .service-text p {
+    color: #ffffff;
+}
+
+.service-area .service-icon {
+    position: relative;
+    width: 150px;
+    min-height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #EF233C;
+    background: #ffffff;
+}
+
+.service-area .service-icon i {
+    position: relative;
+    font-size: 60px;
+    color: #EF233C;
+    transition: .3s;
+}
+
+.service-area .service-item:hover i {
+    font-size: 75px;
+}
+
+.service-area .service-text {
+    position: relative;
+    width: calc(100% - 120px);
+    padding: 0 30px;
+}
+
+.service-area .service-text h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    transition: 1s;
+}
+
+.service-area .service-text p {
+    margin: 0;
+    font-size: 16px;
+    transition: 1s;
+}
+
+/* Service CSS End
 =============================================================== */
 
 
@@ -954,379 +926,6 @@ button,
 }
 
 /* Portolio CSS End
-=============================================================== */
-
-
-/* Banner CSS Start
-=============================================================== */
-
-.banner-area {
-    width: 100%;
-    margin: 45px 0;
-    padding: 90px 0;
-    background: #EF233C;
-}
-
-.banner-area .container {
-    max-width: 750px;
-    text-align: center;
-}
-
-.banner-area .section-header {
-    margin-bottom: 20px;
-}
-
-.banner-area .section-header p {
-    color: #414141;
-    background: transparent;
-}
-
-.banner-area .section-header h2 {
-    color: #ffffff;
-}
-
-.banner-area .container {
-    max-width: 750px;
-    text-align: center;
-}
-
-.banner-area .banner-text p {
-    font-size: 18px;
-    color: #ffffff;
-}
-
-.banner-area .banner-text .cmn-btn {
-    margin-top: 15px;
-    color: #EF233C;
-    background: #ffffff;
-    box-shadow: inset 0 0 0 50px #ffffff;
-}
-
-.banner .banner-text .cmn-btn:hover {
-    color: #ffffff;
-    background: transparent;
-    box-shadow: inset 0 0 0 0 #ffffff;
-    border-color: #ffffff;
-}
-
-/* Banner CSS End
-=============================================================== */
-
-
-/* Price CSS Start
-=============================================================== */
-
-.price-area {
-    position: relative;
-    width: 100%;
-    padding: 45px 0 15px 0;
-}
-
-.price-area .row {
-    padding: 0 15px;
-}
-
-.price-area .col-md-4 {
-    padding: 0;
-}
-
-.price-area .price-item {
-    position: relative;
-    margin-bottom: 30px;
-    background: #ffffff;
-}
-
-.price-area .price-header {
-    padding: 45px 0 30px 0;
-    color: #414141;
-}
-
-.price-area .price-header, 
-.price-area .price-body, 
-.price-area .price-footer {
-    position: relative;
-    text-align: center;
-}
-
-.price-area .price-header {
-    padding: 45px 0 30px 0;
-    color: #414141;
-}
-
-.price-area .price-title h2 {
-    font-size: 25px;
-    font-weight: 400;
-    text-transform: uppercase;
-}
-
-.price-area .price-header {
-    padding: 45px 0 30px 0;
-    color: #414141;
-}
-
-.price-area .price-prices h2 {
-    font-size: 45px;
-    font-weight: 700;
-    margin-left: 10px;
-}
-
-.price-area .price-body {
-    padding: 0 0 20px 0;
-}
-
-.price-area .price-description ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-.price-area .price-description ul li {
-    padding: 0 0 20px 0;
-}
-
-.price-area .price-item .price-action {
-    padding-bottom: 45px;
-}
-
-.price-area .price-item .price-action .cmn-btn {
-    color: #ffffff;
-    background: #414141;
-    box-shadow: inset 0 0 0 50px #414141;
-}
-
-.price-area .price-item .price-action .cmn-btn:hover {
-    color: #414141;
-    background: transparent;
-    box-shadow: inset 0 0 0 0 #414141;
-    border-color: #414141;
-}
-
-.price-area .featured-item {
-    box-shadow: 0 0 30px rgb(0 0 0 / 20%);
-    z-index: 1;
-}
-
-.price-area .price-item.featured-item .price-header {
-    color: #EF233C;
-}
-
-.price-area .price-item.featured-item h2 {
-    color: #EF233C;
-}
-
-.price-area .price-item.featured-item .price-action .cmn-btn {
-    color: #ffffff;
-    background: #EF233C;
-    box-shadow: inset 0 0 0 50px #ef233c;
-}
-
-.price-area .price-item.featured-item .price-action .cmn-btn:hover {
-    color: #EF233C;
-    background: transparent;
-    box-shadow: inset 0 0 0 0 #ef233c;
-    border-color: #EF233C;
-}
-
-
-/* Price CSS End
-=============================================================== */
-
-
-/* Testimonial CSS Start
-=============================================================== */
-
-.testimonial-area {
-    position: relative;
-    margin: 45px 0;
-    padding: 90px 0;
-    background: #EF233C;
-}
-
-.testimonial-area .container {
-    max-width: 900px;
-}
-
-.testimonial-area .testimonial-icon {
-    margin-bottom: 45px;
-    text-align: center;
-}
-
-.testimonial-area .testimonial-icon i {
-    font-size: 60px;
-    color: rgba(256, 256, 256, .5);
-}
-
-.testimonial-area .testimonial-item {
-    position: relative;
-    margin: 0 15px;
-    text-align: center;
-}
-
-.testimonial-area .testimonial-img {
-    position: relative;
-    margin-bottom: 15px;
-    z-index: 1;
-}
-
-.testimonial-area .testimonial-item img {
-    margin: 0 auto;
-    width: 120px;
-    padding: 10px;
-    border: 5px dotted #ffffff;
-    border-radius: 100px;
-}
-
-.testimonial-area .testimonial-text {
-    position: relative;
-    margin-top: -70px;
-    padding: 65px 35px 30px 35px;
-    text-align: center;
-    background: #ffffff;
-    border-radius: 500px;
-}
-
-.testimonial-area .testimonial-item p {
-    font-size: 18px;
-    font-style: italic;
-    padding-bottom: 15px;
-}
-
-.testimonial-area .testimonial-text h3 {
-    color: #EF233C;
-    font-size: 18px;
-    font-weight: 600;
-    margin-bottom: 10px;
-}
-
-.testimonial-area .testimonial-text h4 {
-    color: #666666;
-    font-size: 14px;
-    margin-bottom: 0;
-    font-weight: 500;
-}
-
-.testimonial-area .owl-dots {
-    margin-top: 15px;
-    text-align: center;
-}
-
-.testimonial-area .owl-dot {
-    display: inline-block;
-    margin: 0 5px;
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background: rgba(256, 256, 256, .5);
-}
-
-.testimonial-area .owl-dot.active {
-    background: #ffffff;
-}
-
-/* Testimonial CSS End
-=============================================================== */
-
-
-/* Team CSS Start
-=============================================================== */
-
-.team-area {
-    position: relative;
-    width: 100%;
-    padding: 45px 0 15px 0;
-}
-
-.team-area .team-item {
-    position: relative;
-    background: #ffffff;
-    margin-bottom: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    box-shadow: inset 0 0 0 0 transparent;
-    transition: ease-out 0.5s;
-}
-
-.team-area .team-img {
-    position: relative;
-    width: 50%;
-    overflow: hidden;
-}
-
-.team-area .team-img img {
-    position: relative;
-    width: 100%;
-    transition: .5s;
-}
-
-.team-area .team-text {
-    position: relative;
-    width: 50%;
-    padding: 0 30px;
-}
-
-.team-area .team-text h2 {
-    color: #EF233C;
-    font-size: 18px;
-    font-weight: 600;
-    margin-bottom: 5px;
-    transition: 1s;
-}
-
-.team-area .team-text h4 {
-    font-size: 14px;
-    font-weight: 600;
-    margin-bottom: 15px;
-    transition: 1s;
-}
-
-.team-area .team-text p {
-    margin-bottom: 20px;
-    transition: 1s;
-}
-
-.team-area .team-social {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-}
-
-.team-area .team-social a.cmn-btn {
-    width: 35px;
-    height: 35px;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 14px;
-    font-weight: normal;
-    margin-right: 5px;
-}
-
-.team-area .team-item:hover {
-    box-shadow: inset 800px 0 0 0 #EF233C;
-}
-
-.team-area .team-item:hover .team-img img {
-    transform: scale(1.2);
-}
-
-.team-area .team-item:hover .team-text h2,
-.team-area .team-item:hover .team-text h4,
-.team-area .team-item:hover .team-text p {
-    color: #ffffff;
-}
-
-.team-area .team-item:hover .team-social a.cmn-btn {
-    background: #ffffff;
-}
-
-.team-area .team-item:hover .team-social a.cmn-btn:hover {
-    border-color: #ffffff;
-}
-
-/* Team CSS End
 =============================================================== */
 
 
@@ -1512,13 +1111,6 @@ button,
     position: relative;
     width: 100%;
     text-align: center;
-}
-
-.footer-area .footer-info h2 {
-    margin-bottom: 20px;
-    font-size: 30px;
-    font-weight: 700;
-    color: #ffffff;
 }
 
 .footer-area .footer-info h3 {
